@@ -234,7 +234,7 @@ header a:active {
 .hotel-rating {
     position: relative;
     font-size: 12px;
-    top: 3px;
+    top: -10px;
     padding-left: 15px;
 }
 
@@ -309,7 +309,6 @@ header a:active {
 .pop-rating i {
     position: relative;
     color: #d2d2d2; 
-    bottom: -20px;
 }
 
 .pop-rating i.fas.active {
@@ -600,7 +599,6 @@ footer {
 
     .pop-rating {
         position: relative;
-        top: -20px;
     }
 
     .accomodations {
