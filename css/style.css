@@ -481,7 +481,7 @@ footer {
         width: 189px;
     }
 
-    header a:active {
+    .top-links a:active {
         color: #609ffd;
         border-bottom: solid 4px #609ffd;
         border-top: none;
