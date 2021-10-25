@@ -319,55 +319,81 @@ header a:active {
 
 .activities {
     margin: 20px 0 0 30px;
+    display: grid;
+    grid-template-areas:
+        "l l l l"
+        "a b d e"
+        "a c d f";
+    grid-gap: 30px;
 }
 
 .activities-label {
+    grid-area: l;
     font-size: 18px;
 }
 
-.act-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 475px;
-    margin-top: 35px;
-}
-
 .act-img {
-    width: 300px;
+    width: 275px;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 0 12px 3px #d2d2d2;
+
 }
 
-#act-1 {
-    height: 400px;
+.act-container1 {
+    grid-area: a;
 }
 
-#act-2 {
-    height: 210px;
+.act-container1 .act-img{
+    height: 450px;
 }
 
-#act-3 {
+.act-container2 {
+    grid-area: b;
+}
+
+.act-container2 .act-img {
+    height: 235px;
+}
+
+.act-container3 {
+    grid-area: c;
+}
+
+.act-container3 .act-img {
     height: 115px;
-    margin-top: 21px;
+    margin-top: 15px;
 }
 
-#act-4 {
-    height: 400px;
+.act-container4 {
+    grid-area: d;
 }
 
-#act-5, #act-6 {
-    height: 160px;
+.act-container4 .act-img{
+    height: 450px;
 }
 
-#act-6 {
-    margin-top: 24px;
+.act-container5 {
+    grid-area: e;
 }
+
+.act-container5 .act-img {
+    height: 172px;
+}
+
+.act-container6 .act-img {
+    height: 172px;
+    margin-top: -40px;
+}
+
+.act-container6 {
+    grid-area: f;
+}
+
 
 .act-label {
     position: relative;
     display: flex;
-    width: 300px;
+    width: 275px;
     height: 50px;
     top: -3px;
     border-radius: 0 0 15px 15px;
@@ -393,15 +419,16 @@ footer {
 
 .foot-label {
     flex: 30%;
-    margin: 20px 175px 30px 45px;
+    margin: 20px 175px 30px 75px;
     padding-bottom: 20px;
     font-size: 18px;
 }
 
 
 .foot-links {
+    margin-top: 5px;
     text-decoration: none;
-    margin: 20px 150px 30px 10px;
+    margin: 20px 150px 30px 75px;
 }
 
 .foot-links a {
@@ -612,23 +639,13 @@ footer {
         position: relative;
         top: -10px;
     }
-    
-    .act-container {
-        display: flex;
-        flex-direction: row;
-        height: 600px;
-    }
 
-    #act-1, #act-2, #act-3, #act-4, #act-5, #act-6 {
+    .act-container1 .act-img, .act-container2 .act-img, .act-container3 .act-img, .act-container4 .act-img, .act-container5 .act-img, .act-container6 .act-img {
         height: 150px;
         width: 325px;
-        margin: 30px 0 0 0;
+        margin: 0;
     }
 
-    .act-container {
-        margin-bottom: 775px;
-    }
-    
     .act-label {
         width: 325px;
     }
@@ -636,63 +653,36 @@ footer {
     footer {
         display: block ;
         margin: 50px 0 0 6px;
-        width: 375px;
+        width: 373px;
         background-color: #F2F2F2;
     }
     .foot-label {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .foot-links {
-        margin:14px 3px 5px 8px;
+        margin:14px 3px 5px -19px;
     }
 
   }
 
   @media screen and (max-width: 992px) and (min-width: 768px) {
-    .logo {
-        flex: 3;
-    }
-    
-    .info-text {
-        margin-bottom: 20px;
-    }
-    
-    .filter-button {
-        margin: 10px 20px;
-        min-width: 110px;
-    }
-
-    .fitler-button-label {
-        padding: 0 0 0 5px;
-        font-size: 14px;
-    }
-
-
-    .previews-section {
-        height: 600px;
-    }
-
-    .accomodations {
+ .accomodations {
         flex-direction: column;
         flex-wrap: wrap;
-        max-width: 300px;
-        margin: 0 30px 30px;
-        background-color: #F2F2F2;
-        min-height: 525px;
+        width: 304px;
+        margin: 0;
+        background-color: white;
+
     }
 
     .acc-label {
         margin: 0;
     }
 
-    .acc-img {
-        height: 80px;
-    }
 
     .acc-box {
         width: 348px;
-        margin-left: -13px;
     }
 
     .acc-container {
@@ -702,20 +692,13 @@ footer {
         min-height: 140px;
     }
 
-    
+    .acc-img {
+        height: 90px;
+        width: 93%;
+    }
+
     .popular {
-        margin: 0 0 0 2px;
-        min-height: 525px;
-        max-width: 300px;
-    }
-
-    .most-popular {
-        width: 110px;
-        margin-left: -30px;
-    }
-
-    #chart-icon{
-        margin-left: -55px;
+        margin-left: 2px;
     }
       .pop-container {
           width: 300px;
@@ -723,48 +706,28 @@ footer {
       }
 
       .pop-box {
-          width: 315px;
+          width: 350px;
       }
+
+      .activities {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
     
+
     .hotel-rating {
         position: relative;
         top: -10px;
     }
 
-    .activities {
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
-    }
-
-    .act-container {
-        height: 495px;
-    }
-
-    #act-1, #act-2, #act-3, #act-4, #act-5, #act-6 {
-        height: 90px;
-        width: 365px;
-        margin-top: 20px;
+    .act-container1 .act-img, .act-container2 .act-img, .act-container3 .act-img, .act-container4 .act-img, .act-container5 .act-img, .act-container6 .act-img {
+        height: 150px;
+        width: 325px;
+        margin: 0;
     }
 
     .act-label {
-        width: 365px;
-    }
-
-    .show-more {
-        margin: 10px;
-    }
-
-    .foot-label {
-        margin: 0 0 0 35px;
-    }
-
-    footer {
-        width: 814px;
-        margin-left: 0;
-    }
-
-    .foot-links {
-        margin-left: 0;
+        width: 325px;
     }
   }
