@@ -420,7 +420,7 @@ footer {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     header {
         display: flex;
         flex-wrap: wrap;
@@ -446,11 +446,11 @@ footer {
         font-size: 19px;
         font-weight: bold ;
         gap: 0;
-        margin-left: 1px;
+        margin-left: 3px;
     }
 
     .top-links a {
-        border-bottom: solid 4px #F2F2F2;
+        border-bottom: solid 4px #d2d2d2;
         width: 189px;
     }
 
@@ -547,7 +547,7 @@ footer {
         flex-direction: column-reverse;
     }
     .popular {
-        width: 319px;
+        width: 321px;
         margin: 15px 0 0 0;
     }
 
@@ -595,10 +595,11 @@ footer {
         width: 327px;
         margin: 10px 0;
         box-shadow: 0 0 12px 3px #d2d2d2;
-    }
-    
-    .acc-img {
-        width: 97%;
+    }  
+
+    .hotel-rating {
+        position: relative;
+        top: -10px;
     }
 
     .activities {
@@ -606,45 +607,32 @@ footer {
         flex-direction: column;
         margin-left: 30px;
     }
-    
 
-    .hotel-rating {
-        position: relative;
-        top: -10px;
-    }
-    
     .act-container {
-        display: flex;
-        flex-direction: row;
-        height: 600px;
+        display: block;
     }
 
     #act-1, #act-2, #act-3, #act-4, #act-5, #act-6 {
         height: 150px;
         width: 325px;
-        margin: 30px 0 0 0;
+        margin-top: 20px;
     }
 
-    .act-container {
-        margin-bottom: 775px;
-    }
-    
     .act-label {
         width: 325px;
     }
 
     footer {
         display: block ;
-        margin: 50px 0 0 6px;
+        margin: 885px 0 0 6px;
         width: 375px;
-        background-color: #F2F2F2;
     }
     .foot-label {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .foot-links {
-        margin:14px 3px 5px 8px;
+        margin:14px 3px 5px -19px;
     }
 
   }
