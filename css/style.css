@@ -27,23 +27,23 @@ header a {
     display: inline-block;
     text-align: center;
     width: 47%;
-    height: auto;
-    padding-top: 40px;
-    height: 55%;
+    padding-top: 35px;
+    margin-top: 8px;
     text-decoration: none;
     color: #222222;
+    font-weight: bold;
 }
 
 .logo {
     flex: 8;
-    padding: 20px 0 0 30px;
+    padding: 29px 0 0 30px;
 }
 
 .top-links {
     display: inline-flex;
     flex: 2.25;
     gap: 80px;
-    height: auto;
+    height: 30px;
 }
 
 .sign-up {
@@ -54,11 +54,11 @@ header a {
 header a:active {
     color: #609ffd;
     border-top: solid 3px #609ffd;
+    margin-top: 8px;
 }
 
 .sign-up a {
-    padding-left: 40px;
-    padding-right: 30px;
+    margin: 8px 10px 0 30px;
     color: #609ffd;
     font-weight: bold;
 }
@@ -198,7 +198,7 @@ header a:active {
 .acc-label {
     font-size: 16px;
     font-weight: bold;
-    margin: 30px;
+    margin: 10px 0 0 15px;
 }
 
 .acc-box {
@@ -263,6 +263,11 @@ header a:active {
     border-radius: 15px;
 }
 
+.most-popular {
+    font-size: 17px;
+    margin-top: 0;
+}
+
 .pop-label {
     display: inline-flex;
     padding-left: 30px;
@@ -277,7 +282,7 @@ header a:active {
     flex-direction: column;
     min-height: 500px;
     width: 350px;
-    margin: 30px 30px 0 30px;
+    margin: 17px 30px 0 30px;
     gap: 30px;
 }
 
@@ -295,6 +300,10 @@ header a:active {
     width: 120px;
     border-radius: 15px 0 0 15px;
     padding: 4px 20px 4px 4px;
+}
+
+.pop-hotel {
+    margin-top: -8px;
 }
 
 .pop-description {
@@ -393,7 +402,7 @@ footer {
 
 .foot-label {
     flex: 30%;
-    margin: 20px 175px 30px 45px;
+    margin: 20px 175px 10px 35px;
     padding-bottom: 20px;
     font-size: 18px;
 }
@@ -401,7 +410,7 @@ footer {
 
 .foot-links {
     text-decoration: none;
-    margin: 20px 150px 30px 10px;
+    margin: 0 150px 30px 40px;
 }
 
 .foot-links a {
@@ -438,7 +447,12 @@ footer {
 
     .sign-up a {
         font-size: 20px;
-        margin: -6px 0 0 55px;
+        margin-left: 75px;
+    }
+
+    .sign-up a:active {
+        border: none;
+        margin-left: 75px;
     }
 
     .top-links {
@@ -446,18 +460,22 @@ footer {
         font-size: 19px;
         font-weight: bold ;
         gap: 0;
-        margin-left: 3px;
+        margin:20px 0 0 3px;
+    
     }
 
     .top-links a {
         border-bottom: solid 4px #d2d2d2;
         width: 189px;
+        margin: -38px 0 -10px;
+
     }
 
     .top-links a:active {
         color: #609ffd;
         border-bottom: solid 4px #609ffd;
         border-top: none;
+        margin: -38px 0 -10px;
     }
 
     .search-banner {
@@ -551,6 +569,10 @@ footer {
         margin: 15px 0 0 0;
     }
 
+    .most-popular {
+        margin-top: -20px;
+    }
+
     .pop-container {
         padding: 0;
         margin: 0;
@@ -562,7 +584,7 @@ footer {
     }
 
     .pop-label-icon {
-        margin-top: -20px;
+        margin: -39px 0 10px 60px;
     }
     .pop-box {
         margin: 10px 0;
@@ -632,7 +654,7 @@ footer {
     }
 
     .foot-links {
-        margin:14px 3px 5px -19px;
+        margin: 10px 3px 5px 25px;
     }
 
   }
@@ -640,6 +662,14 @@ footer {
   @media screen and (max-width: 992px) and (min-width: 768px) {
     .logo {
         flex: 3;
+    }
+
+    .top-links {
+        gap: 30px;
+    }
+
+    .search-section {
+        margin-top: 20px;
     }
     
     .info-text {
@@ -649,6 +679,10 @@ footer {
     .filter-button {
         margin: 10px 20px;
         min-width: 110px;
+    }
+
+    .filters i {
+        margin: -1px 0 0 -10px; 
     }
 
     .fitler-button-label {
@@ -753,6 +787,6 @@ footer {
     }
 
     .foot-links {
-        margin-left: 0;
+        margin-left: 45px;
     }
   }
